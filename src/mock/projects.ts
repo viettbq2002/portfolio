@@ -183,6 +183,8 @@ export const listProject: Project[] = [
         icon: AngularIcon,
       },
     ],
+    features: [],
+    objective: "",
   },
   {
     id: 4,
@@ -191,5 +193,9 @@ export const listProject: Project[] = [
       "Personal website for learning NextJS Process, including my information, projects, and contact information. I am excited to work with you on your next project!",
 
     thumbnail: "/Portfolio/PortfolioScreenShot.png",
+    features: [],
+    role: ["Frontend Developer, Product Owner"],
+    objective: "",
+    techStack: [],
   },
 ];
