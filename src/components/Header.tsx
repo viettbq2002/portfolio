@@ -1,7 +1,11 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
+declare global {
+  interface Window {
+    fullpage_api: any; // replace 'any' with the correct type if available
+  }
+}
 const Header = () => {
   return (
     <header className="z-[50] fixed  top-0 w-full  backdrop-blur-sm bg-white/[0.6] dark:bg-black/[0.6] border-neutral-200 dark:border-white/[0.1]">
