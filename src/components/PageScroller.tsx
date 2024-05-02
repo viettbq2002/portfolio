@@ -18,7 +18,7 @@ const PageScroller = () => {
           <div className="section ">
             <Introduction />
           </div>
-          <div data-anchor="about" className="section">
+          <div className="section">
             <About />
           </div>
           <div className="section">
