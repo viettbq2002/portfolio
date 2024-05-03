@@ -8,6 +8,7 @@ const PageScroller = () => {
   return (
     <ReactFullpage
       navigation
+      licenseKey="gplv3-license"
       credits={{
         enabled: true,
         label: "",

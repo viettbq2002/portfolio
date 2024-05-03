@@ -85,7 +85,7 @@ const Introduction = () => {
             }}
             className="text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-loose  mx-auto "
           >
-            a <Highlight className="text-black font-bold dark:text-white">Full Stack Web Developer.</Highlight> with a deep passion for crafting
+            a <Highlight className="text-black font-bold dark:text-white">Full Stack Web Developer,</Highlight> with a deep passion for crafting
             exceptional websites. I thrive on the challenge of translating ideas into user-friendly and visually appealing experiences.
           </motion.h1>
         </div>

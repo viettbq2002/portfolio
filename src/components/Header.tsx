@@ -1,12 +1,15 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 declare global {
   interface Window {
     fullpage_api: any; // replace 'any' with the correct type if available
   }
 }
 const Header = () => {
+  const pathName = usePathname();
+  const router = useRouter();
   return (
     <header className="z-[50] fixed  top-0 w-full  backdrop-blur-sm bg-white/[0.6] dark:bg-black/[0.6] border-neutral-200 dark:border-white/[0.1]">
       <div className="max-w-5xl mx-auto px-4">
@@ -17,6 +20,10 @@ const Header = () => {
           <div className="flex space-x-4 text-gray-900">
             <Button
               onClick={() => {
+                if (pathName !== "/") {
+                  router.push("/");
+                  window.fullpage_api.moveTo(2);
+                }
                 window.fullpage_api.moveTo(2);
               }}
               variant={"ghost"}

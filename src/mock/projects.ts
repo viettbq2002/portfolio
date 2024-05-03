@@ -1,4 +1,5 @@
 import { AngularIcon, DockerIcon, DotnetIcon, JotaiIcon, MantineIcon, RabbitMQIcon, ReactIcon } from "@/components/custom-icon/react-icon";
+import { Card, Project } from "@/type/type";
 import {
   IconActivity,
   IconArchive,
@@ -15,29 +16,11 @@ import {
   IconUserStar,
 } from "@tabler/icons-react";
 
-export interface Project {
-  id: number;
-  title: string;
-  description: string;
-  thumbnail: string;
-  role: string[];
-  objective: string;
-  features?: Features[];
-  techStack: TechStack[];
-}
-export interface Features {
-  name: string;
-  description: string;
-  icon: any;
-}
-export interface TechStack {
-  name: string;
-  icon: any;
-}
 export const listProject: Project[] = [
   {
     id: 1,
     title: "SMARTLAB - EXPERIMENTAL DATA MANAGEMENT SYSTEM IN AGRICULTURE",
+    additionLink: "https://fpt.edu.vn/tin-tuc/fpt-edu-tin-tuc-chung/do-an-cua-sv-truong-dh-fpt-duoc-dua-vao-su-dung-tai-doanh-nghiep",
     description:
       "Tailored for agricultural laboratories addresses the specific needs of managing laboratory workflows, tracking experiments, inventory management, and identifying various strains of diseases affecting rice crops by ISO 17025 standards.",
     thumbnail: "/SmartLabImage/Statistical.png",
@@ -138,6 +121,44 @@ export const listProject: Project[] = [
       {
         name: "Mantine UI",
         icon: MantineIcon,
+      },
+    ],
+    screenshots: [
+      {
+        id: 1,
+        src: "/SmartLabImage/Statistical.png",
+      },
+      {
+        id: 2,
+        src: "/SmartLabImage/Activity.png",
+      },
+      {
+        id: 3,
+        src: "/SmartLabImage/grid-card.png",
+      },
+      {
+        id: 4,
+        src: "/SmartLabImage/lab-detail.png",
+      },
+      {
+        id: 5,
+        src: "/SmartLabImage/predict.png",
+      },
+      {
+        id: 6,
+        src: "/SmartLabImage/Profile.png",
+      },
+      {
+        id: 7,
+        src: "/SmartLabImage/rating.png",
+      },
+      {
+        id: 8,
+        src: "/SmartLabImage/table.png",
+      },
+      {
+        id: 9,
+        src: "/SmartLabImage/upgrade.png",
       },
     ],
   },
