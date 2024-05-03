@@ -1,5 +1,5 @@
 import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
-import { Project } from "@/mock/projects";
+import { Project } from "@/type/type";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

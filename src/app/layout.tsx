@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import { mulish } from "@/components/ui/fonts";
-
+import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: "Viet Porfolio",
   description: "Here is Viet Portfolio",
@@ -22,6 +22,7 @@ export default function RootLayout({
           {/* Radial gradient for the container to give a faded look */}
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           {children}
+          <Analytics />
         </div>
       </body>
     </html>

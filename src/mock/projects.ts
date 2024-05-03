@@ -1,5 +1,5 @@
 import { AngularIcon, DockerIcon, DotnetIcon, JotaiIcon, MantineIcon, RabbitMQIcon, ReactIcon } from "@/components/custom-icon/react-icon";
-import { Card, Project } from "@/type/type";
+import { Project } from "@/type/type";
 import {
   IconActivity,
   IconArchive,
